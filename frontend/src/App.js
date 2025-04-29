@@ -180,7 +180,7 @@ function App() {
     }
   }
 
-  /*FUNCION PARA ELIMINAR REGISTRO*/
+  /*FUNCION PARA ELIMINAR REGISTRO.*/
   const EliminarRegistro = async(id_autor) =>{
     Swal.fire({
       title: "Estas seguro de ELIMINAR este registro?",
