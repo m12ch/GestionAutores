@@ -10,6 +10,7 @@ import { FaRegEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import Swal from 'sweetalert2';
 import { ListGroup } from 'react-bootstrap';
+import { IoBookOutline } from "react-icons/io5";
 
 function App() {
   const [autor, setAutor] = useState([]);
@@ -254,7 +255,7 @@ function App() {
 
       {/* TABLA */}
       <div className='tabla'>
-        {/* Button to open the modal */}
+        {/* Boton para abrir el modal */}
         <Button className="boton-crear" variant="success" onClick={handleShow}>
         Crear Registro
         </Button>
@@ -438,8 +439,8 @@ function App() {
                 <td>
                 <ButtonGroup aria-label="Basic example">
                   <Button variant="warning" className="boton-ver me-2 rounded-pill d-flex align-items-center gap-2" onClick={()=>{obtenerLibrosAutor(aut.id_autor, aut.nombre)}}>
-                    <span>Ver Libro</span>
-                    <FaRegEdit />
+                    <span>Ver Libros</span>
+                    <IoBookOutline />
                   </Button>
                   <Button variant="warning" className="boton-editar me-2 rounded-pill d-flex align-items-center gap-2" onClick={()=>{EditarRegistro(aut)}}>
                     <span>Editar</span>
